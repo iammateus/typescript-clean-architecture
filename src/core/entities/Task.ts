@@ -1,13 +1,18 @@
-export class Task {
-    id?: string
-    name: string
-    description: string
-    date: Date
-    status: "todo" | "doing" | "done" | "canceled"
+export type Status = 'todo' | 'doing' | 'done' | 'canceled';
+export default class Task {
+    id?: string;
 
-    constructor(name: string, description: string, date: Date, status: "todo" | "doing" | "done" | "canceled") {
+    name: string;
+
+    description: string;
+
+    date: Date;
+
+    status: Status;
+
+    constructor(name: string, description: string, date: Date, status: Status) {
         this.name = name;
-        this .description = description;
+        this.description = description;
         this.date = date;
         this.status = status;
     }
