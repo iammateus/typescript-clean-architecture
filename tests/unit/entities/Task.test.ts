@@ -1,6 +1,6 @@
 import faker from 'faker';
 
-import Task, { Status } from '../../src/core/entities/Task';
+import Task, { Status } from '../../../src/core/entities/Task';
 
 describe('Task', () => {
     it('should have following attributes', () => {
